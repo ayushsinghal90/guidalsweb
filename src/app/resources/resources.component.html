@@ -1,0 +1,29 @@
+<div class="sidebar"><a (click)="onClick()" *ngIf="!access" class="btn-nav open"><i class="ion-arrow-right-b menus"></i></a>
+   <div *ngIf="access" class="sidenav">
+      <a (click)="onClick()" class="btn-nav close"><i class="ion-close-round menus"></i></a>
+      <ul>
+        <li class="nest">
+          <a class="noth" (click)="show()">MUST VIEW<i *ngIf="!shown" class="ion-chevron-down men"></i>
+          <i *ngIf="shown" class="ion-chevron-up men"></i></a>
+          <ul class="nest-dop"  [ngClass]="{'nes-show':shown}">
+        <li><a class="res-el" routerLink="howtoprmasbeginr" routerLinkActive="active" (click)="onClick()">How to code as beginner</a></li>
+        <li><a class="res-el" routerLink="bestpracticewhilecoding" routerLinkActive="active" (click)="onClick()">Best Practice in coding</a></li>
+        <li><a class="res-el" routerLink="competitivecodingsites" routerLinkActive="active" (click)="onClick()">Competitive Coding sites</a></li>
+        <li><a class="res-el" routerLink="paidtutorialsites" routerLinkActive="active" (click)="onClick()">Paid tutorial sites</a></li>
+        <li><a class="res-el" routerLink="freetutorialsites" routerLinkActive="active"(click)="onClick()">Free tutorial Channels</a></li>
+        <li><a class="res-el" routerLink="helpformsites" routerLinkActive="active" (click)="onClick()">Help Forums Sites</a></li>
+           </ul>
+        </li>
+        <li  class="noth spec">CODING STUFF</li>
+        <li class="res-men" ><div class="res-lnk"  [ngClass]="{'show-min':shown}">
+        <li *ngFor="let resn of res; let i = index" >
+          <a class="res-el res-el2" routerLinkActive="active" [routerLink]="'languagedetails/'+resn[1]+'/'+resn[0]" (click)="onClick()">{{resn[1]}}</a>
+        </li>
+      </div>
+        </li>
+      </ul>
+   </div>
+</div>
+<div class="res-comp">
+  <router-outlet></router-outlet>
+</div>

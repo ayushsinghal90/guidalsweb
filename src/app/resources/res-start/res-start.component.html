@@ -1,0 +1,47 @@
+<div class="row cont">
+  <section class="col span-5-of-6 strt">
+
+    <div class="section group blg-lnk">
+
+         <div class="col span-1-of-2 lnk1 lnks">
+            <a routerLink="howtoprmasbeginr">
+              <div><p>How to code as beginner</p></div></a>
+         </div>
+         <div class="col span-1-of-2 lnk2 lnks">
+           <a routerLink="bestpracticewhilecoding">
+             <div><p>Best Practice in coding</p></div></a>
+         </div>
+         <div class="col span-1-of-2 lnk3 lnks">
+           <a routerLink="competitivecodingsites">
+             <div><p>Competitive Coding sites</p></div></a>
+         </div>
+         <div class="col span-1-of-2 lnk4 lnks">
+          <a routerLink="paidtutorialsites">
+            <div><p>Paid tutorial sites</p></div></a>
+         </div>
+         <div class="col span-1-of-2 lnk5 lnks">
+          <a routerLink="freetutorialsites"><div>
+            <p>Free tutorial Channels</p>
+          </div></a>
+         </div>
+         <div class="col span-1-of-2 lnk6 lnks">
+          <a routerLink="helpformsites"><div>
+            <p>Online Help Forums</p>
+          </div></a>
+         </div>
+    </div>
+    <div class="row section container">
+   <div class="heading"><h3>CODING STUFF</h3></div>
+  <div class="section group res-lnk">
+    <div class="col span-1-of-4 res-crd" *ngFor="let res of resn; let i = index">
+      <div class="card">
+      <a [routerLink]="'languagedetails/'+res[1]+'/'+res[0]">  <div>  <img src="{{res[2]}}" class="logo"></div>
+      <div>  {{res[1]}}</div></a></div>
+    </div>
+  </div>
+  </div>
+  </section>
+  <section class="col span-1-of-6 ads">
+    <div [innerHtml]="html" ></div>
+  </section>
+</div>

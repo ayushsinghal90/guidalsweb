@@ -1,0 +1,35 @@
+<header>
+  <nav class="main-head">
+  <a routerLink="" class="logo" (click)="onhd()">
+   GUIDALS</a>
+   <a class="mob-nav" (click)="onmenu()"><i *ngIf="show" class="ion-navicon-round menum"></i>
+   <i *ngIf="!show" class="ion-close-round menum"></i></a>
+    <ul class="main-nav" [ngClass]="{'acc-show':!show}">
+      <li><a  class="clk-btn" routerLink="/ourmoto"  routerLinkActive="active" (click)="onmenu()">Our Moto</a></li>
+      <li class="dropdown">
+        <a routerLink="/resources"  routerLinkActive="active" class="clk-btn" (click)="onmenu()">Resources</a>
+          <ul class="drop-nav">
+            <div>
+              <div class="noth"> <p>Important Blogs</p> </div>
+              <div class="res1">
+                <li class="col span-1-of-2 "><a routerLink="/resources/howtoprmasbeginr" (click)="onmenu()">How to code as beginner</a></li>
+                <li class="col span-1-of-2 "><a routerLink="/resources/bestpracticewhilecoding" (click)="onmenu()">Best Practice in coding</a></li>
+                <li class="col span-1-of-2 "><a routerLink="/resources/competitivecodingsites" (click)="onmenu()">Competitive Coding sites</a></li>
+                <li class="col span-1-of-2 "><a routerLink="/resources/paidtutorialsites" (click)="onmenu()">Paid tutorial sites</a></li>
+                <li class="col span-1-of-2 "><a routerLink="/resources/freetutorialsites" (click)="onmenu()">Free tutorial Channels</a></li>
+                <li class="col span-1-of-2 "><a routerLink="/resources/helpformsites" (click)="onmenu()">Help Forums Sites</a></li>
+              </div>
+              <div class="noth"> <p>Coding Stuff</p> </div>
+              <div class="res2">
+                   <li  routerLinkActive="active" *ngFor="let res of (resn); let i = index" class="col span-1-of-4  res-lnk">
+                     <a [routerLink]="'resources/languagedetails/'+res[1]+'/'+res[0]" (click)="onmenu()">{{res[1]}}</a>
+                   </li>
+              </div>
+            </div>
+          </ul>
+      </li>
+      <li><a class="clk-btn" routerLinkActive="active" routerLink="/suggestion" (click)="onmenu()">Suggestion</a></li>
+      <li><a class="clk-btn" routerLinkActive="active" routerLink="/aboutus" (click)="onmenu()">About Us</a></li>
+    </ul>
+  </nav>
+  </header>

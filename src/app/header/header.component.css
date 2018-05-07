@@ -1,0 +1,230 @@
+.main-head{
+  border-bottom: 1px solid #f1f2f6;
+  background-color: #fffff7;
+  position: fixed;
+  width: 100%;
+  z-index: 1500;
+}
+.menum{
+  font-size: 130%;
+}
+
+.clk-btn:link,
+.clk-btn:visited{
+  text-decoration: none;
+  color: #636e72;
+  font-weight: 700;
+    -webkit-transition: border 0.2s,color 0.2s;
+    transition: border 0.2s,color 0.2s;
+}
+.span-1-of-2:nth-child(2n+1) {
+	clear:left;
+	margin-left: 0;
+}
+.span-1-of-4:nth-child(4n+1) {
+	clear:left;
+	margin-left: 0;
+}
+ul {
+ list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.logo{
+  display: inline-block;
+     cursor: pointer;
+  text-decoration: none;
+  margin-left: 5%;
+  padding: 1% 1%;
+  float: left;
+  color: #e74c3c;
+  font-weight: 900;
+  font-size: 110%;
+}
+.main-nav {
+  display: block;
+  float: right;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+.main-nav > li {
+  display: inline-block;
+}
+.main-nav a {
+     cursor: pointer;
+    display: block;
+    margin: 0 20px;
+    padding: 7px 10px;
+    text-decoration: none;
+}
+.main-nav .clk-btn:hover,
+.main-nav .clk-btn.active {
+  font-weight: 700 !important;
+  color: #1e272e !important;
+  border-bottom: 3px solid #e74c3c !important;
+}
+.dropdown {
+  position: relative;
+}
+.drop-nav a{
+  text-decoration: none;
+  color: #1e272e;
+  font-weight: 200;
+  font-size: 70%;
+}
+.drop-nav{
+  padding: 10%;
+  position: absolute;
+  width: 350%;
+  left: -122%;
+  background-color: #fffff7;
+  display: none;
+  line-height: 100%;
+  border-top: 3px transparent;
+  font-weight: 700;
+  border-radius: 2px;
+  border: 1px solid #d6d6d6;
+  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+          box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+.res1{
+  text-align: center;
+  margin-bottom: 22%;
+}
+.res-lnk a{
+  font-size: 70%;
+  font-weight: 700;
+  line-height: 50%;
+  text-align: center;
+  cursor: pointer;
+  color: #828282;
+    -webkit-transition: background-color 0.2s, border 0.4s, color 0.2s;
+    transition: background-color 0.2s, border 0.4s, color 0.2s;
+}
+.res-lnk a:hover{
+  color:#2d3436;
+  font-weight: 900;
+}
+.res1 a{
+  font-size: 80%;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 50%;
+}
+.res1 a:hover{
+   font-weight: 900;
+    color:#1e272e;
+}
+.noth{
+  text-align: center;
+  font-size: 90%;
+  color: #e17055;
+  cursor: default;
+}
+.noth::after{
+  display: block;
+  height: 1px;
+  background-color: #dfe6e9;
+  content: " ";
+  width: 80%;
+  margin: 7px auto ;
+}
+  .resor i{
+    display: none;
+ }
+.mob-nav{
+  float: right;
+   margin: 8px 30px;
+   cursor: pointer;
+   display: none;
+
+}
+
+@media only screen and (max-width:1010px){
+  .drop-nav{
+    padding: 10% 6%;
+    width: 330%;
+  }
+  .res1{
+    font-size: 90%;
+  }
+  .drop-nav a{
+    line-height: 120%;
+  }
+  .res-lnk a,
+  .res1-lnk a{
+    font-size: 75%;
+    line-height: 115%;
+  }
+  .main-nav a{
+    padding: 3px 8px;
+  }
+  .main-nav .clk-btn:active{
+    border-bottom: 2px solid #e74c3c;
+  }
+}
+@media only screen and (max-width:767px){
+
+  .main-nav{
+    margin-top: 5px;
+  }
+}
+@media only screen and (min-width:651px)
+{.dropdown:hover >.drop-nav,
+.dropdown:active > .drop-nav{
+  z-index: 1100;
+  display: inline-block;
+}
+}
+@media only screen and (max-width:650px){
+  .logo{
+      padding-top: 1.5%;
+    font-size: 130%;
+  }
+  .mob-nav{
+    display: block;
+  }
+  .main-nav > li {
+    display: block;
+  }
+  .main-nav{
+    position: absolute;
+    width: 100%;
+    top: 90%;
+    text-align: center;
+    left: 0%;
+    background-color: #fffff7;
+    display: none;
+    line-height: 100%;
+    border-top: 3px transparent;
+    font-weight: 700;
+    border-radius: 2px;
+  }
+  .acc-show{
+    display: block;
+  }
+
+.main-nav .clk-btn:link,
+.main-nav .clk-btn:visited{
+    display: block;
+    line-height: 180%;
+    font-weight: 900 !important;
+    border: 0 !important;
+  }
+  .clk-btn{
+    font-size: 110%;
+  }
+}
+@media only screen and (max-width:480px){
+  .menum{
+    font-size: 150%;
+  }
+
+  .logo{
+      padding-top: 2%;
+    font-size: 150%;
+  }
+  .main-head{
+    padding-top: 0.5%;
+  }
+}

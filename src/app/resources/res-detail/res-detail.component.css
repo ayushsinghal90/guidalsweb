@@ -1,0 +1,79 @@
+h3{
+  margin: 10px;
+  color: #2d3436;
+}
+.tit-hd{
+  display: block;
+  text-align: center;
+  font-size: 150%;
+  line-height: 100%;
+}
+.logo-lang{
+  width: auto;
+  height: 100px;
+}
+.bok{
+  margin: 40px 0;
+
+}
+
+.fre ,
+.pai{
+  margin: 50px 0;
+}
+.logo-book,
+.logo-ftut{
+  width: 80%;
+  height: 60%;
+  margin: 5%;
+}
+.logo-ftut{
+  border-radius: 50%;
+}
+.logo-ftut:hover{
+  border-radius: 0;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+.lnk-buy{
+  padding: 10px 20px;
+  margin-left: 10px;
+  text-decoration: none;
+  border-radius: 150px;
+  color: #2d3436;
+  font-weight: 700;
+}
+.lnk-buy:hover,
+.lnk-buy:active{
+  color: #fff;
+  -webkit-box-shadow: 0 5px 30px rgba(0,0,0,0.4);
+          box-shadow: 0 5px 30px rgba(0,0,0,0.4);
+}
+.amaz-lnk{
+  background-color: #f0932b;
+  border: 1px solid #f0932b;
+}
+.amaz-lnk:hover,
+.amaz-lnk:active{
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+}
+.flip-lnk{
+  background-color: #ffd32a;
+    border: 1px solid #ffd32a;
+}
+.flip-lnk:hover,
+.flip-lnk:active{
+  background-color: #f1c40f;
+  border: 1px solid #f1c40f;
+}
+.free-lnk{
+  border: 2px solid #e17055;
+}
+
+@media only screen and (max-width:767px){
+  .logo-lang{
+    width: auto;
+    height: 80px;
+  }
+}

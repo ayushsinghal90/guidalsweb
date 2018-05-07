@@ -1,0 +1,32 @@
+<div class="row cont">
+<section class="col frtut span-6-of-6">
+  <h2>Paid Tutorial Sites</h2>
+   <p class="tit-desc">Here is the list of some websites offering paid tutorials.
+      These websites offer a certificate for courses they offer.
+       This page gives you a preview of the course they offer and these websites have guidelines
+        for creators too so that you get best out of these courses. It based on your choice whether
+         you want a paid or free tutorial series but these sites can help in summer courses during
+     college summer break. I suggest you have a look at some of these websites.</p>
+
+
+
+
+<h4>List of Sites</h4>
+<div class="row box" *ngFor="let pasi of paisit">
+  <div class="col span-1-of-6"><img src="{{pasi.logourl}}" class="logo-web"></div>
+  <div class="col span-5-of-6 main-bd"><h5>{{pasi.name}}</h5>
+    <div >
+      <h6>Founder Name: {{pasi.creanm}}</h6>
+    </div>
+    <div>
+      <p class="desc">
+        {{pasi.describ}}
+      </p>
+    </div>
+    <div class="btn">
+     <a href="{{pasi.lnkto}}" class="free-lnk lnk-nav"  target="_blank">Start Learning</a>
+     </div>
+  </div>
+ </div>
+</section>
+</div>

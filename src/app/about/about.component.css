@@ -1,0 +1,5 @@
+.com_pag{
+  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.55))),url(https://d18y63m4qq797z.cloudfront.net/about.b5e7a51d7e581e28d081.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.55)),url(https://d18y63m4qq797z.cloudfront.net/about.b5e7a51d7e581e28d081.jpg);
+  height: 60vh;
+}

@@ -1,0 +1,75 @@
+<header class="sugs_pag">
+  <div class="sugs_text">
+<p>Hi, there give your valuable suggestions to help us improve our content and user interface.
+   If you don't have any, well then you can write us a thank you note ;-)</p>
+</div>
+</header>
+<section class="section-form">
+          <div class="row">
+              <h3>WE'RE HAPPY TO HEAR FROM YOU</h3>
+            </div>
+            <div class="row">
+               <form [formGroup]="rForm" (ngSubmit)="onSubmit()" class="contact-form">
+                   <div class="row">
+                      <div class="col span-1-of-3">
+                       <label for="name">Name</label>
+                       </div>
+                       <div class="col span-2-of-3">
+                          <input type="text" name="name" id="name" formControlName="name"/>
+                          <div class="alert" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">Please enter a valid name.</div>
+                       </div>
+                   </div>
+
+                   <div class="row">
+                      <div class="col span-1-of-3">
+                       <label for="email">Email</label>
+                       </div>
+                       <div class="col span-2-of-3">
+                          <input type="email" name="email" id="email" formControlName="email"/>
+                          <div class="alert" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">Please enter a valid email address.</div>
+                       </div>
+                   </div>
+
+
+                   <div class="row">
+                      <div class="col span-1-of-3">
+                       <label>Newsletter?</label>
+                       </div>
+                       <div class="col span-2-of-3">
+                          <input type="checkbox" name="news" id="news" formControlName="newsteler"/>Yes,please
+                       </div>
+                   </div>
+
+                   <div class="row">
+                      <div class="col span-1-of-3">
+                       <label for="sugab">Suggestion About</label>
+                       </div>
+                       <div class="col span-2-of-3">
+                          <input type="text" name="sugab" id="sugab" formControlName="about"/>
+                          <div class="alert" *ngIf="!rForm.controls['about'].valid && rForm.controls['about'].touched">Please provide a header for your suggestion.</div>
+                       </div>
+                   </div>
+
+                   <div class="row">
+                      <div class="col span-1-of-3">
+                       <label>Description</label>
+                       </div>
+                       <div class="col span-2-of-3">
+                           <textarea name="message" formControlName="descrip"></textarea>
+                           <div class="alert" *ngIf="!rForm.controls['descrip'].valid && rForm.controls['descrip'].touched">Tell us about your thought or problem in detail.</div>
+                       </div>
+                   </div>
+
+                   <div class="row">
+                      <div class="col span-1-of-3">
+                       <label>&nbsp;</label>
+                       </div>
+                       <div class="col span-2-of-3">
+                          <input type="submit" value="Send It" [disabled]="!rForm.valid"/>
+                          <div class="alert" *ngIf="onsubcom">Submitted.</div>
+
+                       </div>
+                   </div>
+                </form>
+            </div>
+        </section>

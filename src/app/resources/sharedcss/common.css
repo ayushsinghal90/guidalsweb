@@ -1,0 +1,267 @@
+.frtut{
+ padding: 40px;
+  font-size: 90%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+          box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
+h2{
+  padding-top: 2%;
+  text-align: center;
+  font-size: 190%;
+  font-weight: 400;
+}
+h2::after{
+  display: block;
+  height: 2px;
+  background-color: #e74c3c;
+  content: " ";
+  width: 15%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+h5{
+  font-size: 130%;
+  padding-bottom: 4px;
+}
+h6{
+  padding: 2px 0;
+  font-size: 90%;
+  color: #57606f;
+}
+h4{
+  padding: 20px 40px;
+  font-size: 150%;
+  word-spacing: 2px;
+  color: #e58e26;
+}
+.main-bd{
+  padding-left: 40px;
+}
+.tit-desc{
+  padding: 3% 10%;
+  font-size: 110%;
+  line-height: 145%;
+  font-weight: 400;
+  color: #636e72;
+  word-spacing: 3px;
+}
+.box{
+   margin: 0 30px;
+   margin-top: 20px;
+   padding: 20px;
+   border-radius: 2%;
+   border: 1px solid #ecf0f1;
+}
+.desc{
+  padding: 20px;
+  font-size: 95%;
+  line-height: 150%;
+  font-weight: 400;
+  color: #636e72;
+  word-spacing: 3px;
+}
+.btn{
+  padding: 3%;
+}
+.lnk-nav{
+  padding: 2% 3.5%;
+  margin-left: 10px;
+  text-decoration: none;
+  border-radius: 150px;
+  color: #2d3436;
+  font-weight: 700;
+  border: 2px solid #e17055;
+}
+.lnk-nav:hover,
+.lnk-nav:active{
+  color: #fff;
+  background-color: #ff4d4d;
+  border: 1px solid #ff4d4d;
+  -webkit-box-shadow: 0 5px 30px rgba(0,0,0,0.4);
+          box-shadow: 0 5px 30px rgba(0,0,0,0.4);
+}
+
+.logo-web{
+  width: 100%;
+  height: 80%;
+  margin: 30% 5%;
+}
+.logo-ftut2{
+  width: 80%;
+  height: 60%;
+  margin: 5%;
+}
+.logo-chn{
+  border-radius: 50%;
+}
+.logo-ftut1{
+     width: 125%;
+     margin: 5%;
+     padding-right: 20%;
+}
+@media only screen and (max-width:1200px){
+  .tit-desc{
+    padding: 3% 7%;
+    font-size: 95%;
+  }
+  .desc{
+    padding: 15px;
+      font-size: 90%;
+  }
+}
+
+@media only screen and (max-width:1023px){
+  .tit-desc{
+    padding: 3% 5%;
+    font-size: 100%;
+    line-height: 130%;
+  }
+  .desc{
+    padding: 10px;
+      font-size: 85%;
+      line-height: 100%;
+  }
+  h5{
+    font-size: 110%;
+  }
+  h6{
+    font-size: 80%;
+  }
+  .lnk-nav,
+  .lnk-buy{
+    font-size: 80%;
+  }
+}
+@media only screen and (max-width:995px){
+  .logo-web{
+    width: 25%;
+    height: 0.5%;
+    margin: 1.5% 5%;
+  }
+  .desc{
+    padding: 20px 0;
+    font-size: 90%;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .logo-ftut2{
+    width: 14%;
+    height: 0.5%;
+    margin: 1.5% 5%;
+  }
+  .logo-ftut1{
+    padding-right: 0;
+    padding-left: 20px;
+    width: 25%;
+      height: 0.5%;
+      margin: 1.5% 5%;
+  }
+  .logo-book{
+    width: 13%;
+    height: 0.15%;
+    margin: 1.5% 5%;
+  }
+    .main-bd{
+      padding: 0 10px;
+    }
+    .lnk-nav,
+    .lnk-buy{
+      font-size: 90%;
+    }
+}
+@media only screen and (max-width:900px){
+  .logo-book
+  {width: 18%;
+  height: 0.3%;
+  margin: 1.5% 5%;
+}
+}
+@media only screen and (max-width:650px){
+  .frtut{
+    padding: 30px;
+  }
+  h4{
+    padding: 15px 25px;
+  }
+  .tit-desc{
+    font-size: 90%;
+  }
+  .logo-ftut2{
+    width: 20%;
+  }
+  .logo-ftut1{
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width:580px){
+  .logo-web,
+  .logo-book{
+    width: 30%;
+  }
+
+  .tit-desc{
+    font-size: 85%;
+  }
+  .desc{
+    font-size: 85%;
+  }
+  .box{
+    margin: 10px 15px;
+    margin-right: 10px;
+    padding: 15px;
+  }
+}
+@media only screen and (max-width:480px){
+  .tit-desc{
+    font-size: 100%;
+  }
+  .desc{
+    font-size: 95%;
+  }
+  h2{
+    font-size: 160%;
+  }
+  h4{
+    font-size: 155%;
+  }
+  h5{
+    font-size: 130%;
+  }
+  h6{
+    font-size: 100%;
+  }
+  .lnk-nav,
+  .lnk-buy{
+    font-size: 80%;
+    padding: 5px 8px;
+  }
+}
+@media only screen and (max-width:400px){
+  .frtut{
+    padding: 15px;
+  }
+  .box{
+      margin: 6px 8px;
+    padding: 5px;
+  }
+  h2{
+    font-size: 150%;
+  }
+  h4{
+    padding: 10px 15px;
+  }
+  h6{
+    font-size: 95%;
+  }
+  .main-bd{
+    padding: 0 5px;
+  }
+  .tit-desc,
+      .desc{
+        font-size: 95%;
+    word-spacing: 2px;
+  }
+
+}

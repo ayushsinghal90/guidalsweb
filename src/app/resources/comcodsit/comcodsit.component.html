@@ -1,0 +1,29 @@
+<div class="row cont">
+<section class="col frtut span-6-of-6">
+  <h2>Competitive Coding Sites</h2>
+   <p class="tit-desc">Here are some sites where you can polish your coding skills through competitive programming.
+      These sites contain problem in different domains you can choose your domain to start with.
+       These sites regularly organize competitions in competitive programming with prizes.
+        Some of these sites have a youtube channel with some tutorials you can also watch them for reference purposes.
+      You should regularly practice on these sites.
+</p>
+
+<h4>List of Sites</h4>
+<div class="row box" *ngFor="let csit of comst">
+  <div class="col span-1-of-6"><img src="{{csit.logurl}}" class="logo-web"></div>
+  <div class="col span-5-of-6 main-bd"><h5>{{csit.name}}</h5>
+    <div >
+      <h6>Founder Name: {{csit.crename}}</h6>
+    </div>
+    <div>
+      <p class="desc">
+        {{csit.describ}}
+      </p>
+    </div>
+    <div class="btn">
+     <a href="{{csit.lnkto}}" class="free-lnk lnk-nav"  target="_blank">Start Learning</a>
+     </div>
+  </div>
+ </div>
+</section>
+</div>

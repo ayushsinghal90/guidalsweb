@@ -1,0 +1,79 @@
+<div class="row cont">
+<section class="col span-6-of-6 frtut">
+
+   <div class="row">
+     <div class="tit-hd">
+     <img src="{{cont.logo}}" class="logo-lang">
+    <h3>{{cont.title}}</h3>
+      </div>
+      <div class="tit-desc">
+     <p>{{cont.descrip}}</p>
+     <br>
+     <p>{{cont.imple}}</p>
+     </div>
+   </div>
+
+   <div class="bok">
+        <h4><i class="ion-printer"></i> Books</h4>
+       <div class="row box"*ngFor = "let book of cont.book">
+          <div class="col span-1-of-6"><img src="{{book.imgurl}}" class="logo-book"></div>
+          <div class="col span-5-of-6 main-bd"><h5>{{book.name}}</h5>
+            <div >
+              <h6>Author Name: {{book.authrnm}}</h6>
+              <h6>Current Edition: {{book.cured}}</h6>
+            </div>
+            <div>
+              <p class="desc">
+                {{book.descib}}
+              </p>
+            </div>
+            <div class="btn">
+             <a href="{{book.amazlnk}}" class="amaz-lnk lnk-buy"  target="_blank">Buy On Amazon</a>
+             <a href="{{book.fliplnk}}" class="flip-lnk lnk-buy"  target="_blank">Buy On Flipkart</a>
+             </div>
+          </div>
+    </div>
+  </div>
+     <div class="fre">
+         <h4><i class="ion-earth"></i> Free Tutorial Links</h4>
+        <div class="row box"*ngFor = "let free of cont.free">
+           <div class="col span-1-of-6"><img src="{{free.imgurl}}" class="logo-ftut1"></div>
+           <div class="col span-5-of-6 main-bd"><h5>{{free.name}}</h5>
+             <div >
+               <h6>Channel Name: {{free.chnam}}</h6>
+               <h6>Creator Name: {{free.crename}}</h6>
+               <h6>Language Used: {{free.spoklang}}</h6>
+             </div>
+             <div>
+               <p class="desc">
+                 {{free.descri}}
+               </p>
+             </div>
+             <div class="btn">
+              <a href="{{free.url}}" class="free-lnk lnk-nav"  target="_blank">Start Learning</a>
+              </div>
+           </div>
+        </div>
+     </div>
+    <div class="pai">
+          <h4><i class="ion-card"></i> Paid Tutorial Links</h4>
+         <div class="row box"*ngFor = "let paid of cont.paid">
+            <div class="col span-1-of-6"><img src="{{paid.lecimg}}" class="logo-ftut1"></div>
+            <div class="col span-5-of-6 main-bd"><h5>{{paid.name}}</h5>
+              <div >
+                <h6>Creator Name: {{paid.crename}}</h6>
+                <h6>Language Used: {{paid.chnlan}}</h6>
+              </div>
+              <div>
+                <p class="desc">
+                  {{paid.descri}}
+                </p>
+              </div>
+              <div class="btn">
+               <a href="{{paid.url}}" class="free-lnk lnk-nav" target="_blank">Start Learning</a>
+               </div>
+            </div>
+         </div>
+      </div>
+</section>
+</div>

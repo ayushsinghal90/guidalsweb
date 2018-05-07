@@ -1,0 +1,78 @@
+.com_pag{
+position: relative;
+ opacity: 0.9;
+ background-position: center;
+ background-size: cover;
+ background-attachment: fixed;
+ width: 100%;
+ color: #ffffff;
+}
+.com_text{
+  position: absolute;
+  text-align: center;
+  line-height: 150%;
+  font-size: 200%;
+  font-weight: 400;
+  font-style: italic;
+  width: 80%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+h3{
+  font-size: 200%;
+  font-weight: 300;
+  word-spacing: 2px;
+  padding: 10px;
+  text-align: center;
+}
+h3::after{
+  display: block;
+  height: 2px;
+  background-color: #e74c3c;
+  content: " ";
+  width: 15%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.com_txt{
+  -webkit-box-shadow: 10px 0 0 rgba(0,0,0,0,0.4);
+          box-shadow: 10px 0 0 rgba(0,0,0,0,0.4);
+  padding: 1% 20%;
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+.com_txt p{
+  padding: 10px 0;
+  font-style: oblique;
+  line-height: 150%;
+  word-spacing: 2px;
+}
+@media only screen and (max-width:1140px){
+  .com_text{
+    font-size: 180%;
+  }
+  .com_txt{
+    padding: 1% 10%;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (max-width:780px){
+  .com_text{
+    font-size: 180%;
+  }
+}
+@media only screen and (max-width:660px){
+  .com_text{
+    font-size: 180%;
+  }
+  .com_txt{
+    padding: 1% 7%;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (max-width:480px){
+  .com_text{
+    font-size: 170%;
+  }
+}

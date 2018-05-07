@@ -1,0 +1,29 @@
+<div class="row cont">
+<section class="col frtut span-6-of-6">
+  <h2>Online Help Forums</h2>
+   <p class="tit-desc">Hi there, this is the list of some online Forums which you
+      can use for any problem you face while coding. Online Forums help Developer
+       community to communicate with each other, coders post their problems here and
+        developers around the world post solution to there problem. These will help you a lot so do create an account
+      in some of them it will be beneficial to you while coding or creating projects.</p>
+
+
+<h4>List of Sites</h4>
+<div class="row box" *ngFor="let hfsi of hform">
+  <div class="col span-1-of-6"><img src="{{hfsi.logurl}}" class="logo-web"></div>
+  <div class="col span-5-of-6 main-bd"><h5>{{hfsi.name}}</h5>
+    <div >
+      <h6>Founder Name: {{hfsi.creanm}}</h6>
+    </div>
+    <div>
+      <p class="desc">
+        {{hfsi.describ}}
+      </p>
+    </div>
+    <div class="btn">
+     <a href="{{hfsi.lnkto}}" class="free-lnk lnk-nav"  target="_blank">Start Learning</a>
+     </div>
+  </div>
+ </div>
+</section>
+</div>

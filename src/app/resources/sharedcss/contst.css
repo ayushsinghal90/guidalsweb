@@ -1,0 +1,41 @@
+@media only screen and (max-width:1170px){
+  .cont{
+    margin-top: 4%;
+  }
+}
+@media only screen and (max-width:994px){
+  .cont{
+    margin-top: 4.2%;
+  }
+}
+ @media only screen and (max-width:850px){
+  .cont{
+    margin-top: 5%;
+}
+}
+@media only screen and (max-width:660px){
+  .cont
+   {
+    margin-top: 6.5%;
+  }
+}
+@media only screen and (max-width:550px){
+  .cont{
+    margin-top: 7.5%;
+  }
+}
+@media only screen and (max-width:480px){
+  .cont{
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width:400px){
+  .cont{
+    margin-top: 11%;
+  }
+}
+@media only screen and (max-width:350px){
+  .cont{
+    margin-top: 12%;
+  }
+}

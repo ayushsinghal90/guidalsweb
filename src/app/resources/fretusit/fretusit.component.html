@@ -1,0 +1,27 @@
+<div class="row cont">
+<section class="col span-6-of-6 frtut">
+  <h2>Free tutorial Channels</h2>
+   <p class="tit-desc">Here is the list of some free tutorial channel with most of them regularly updating their content.
+      All the channels listed here provide free knowledge of the programming language you can always
+       to these channels to increase your knowledge.
+      Though they are free they don't compromise on the quality of there content do have a look at them they will actually benefit you.</p>
+
+<h4>List of Channels</h4>
+<div class="row box" *ngFor="let fcn of freecon">
+  <div class="col span-1-of-6"><img src="{{fcn.logurl}}" class="logo-ftut2 logo-chn" ></div>
+  <div class="col span-5-of-6 main-bd"><h5>{{fcn.chname}}</h5>
+    <div >
+      <h6>Creator Name: {{fcn.crename}}</h6>
+    </div>
+    <div>
+      <p class="desc">
+        {{fcn.descri}}
+      </p>
+    </div>
+    <div class="btn">
+     <a href="{{fcn.lnkto}}" class="free-lnk lnk-nav"  target="_blank">Start Learning</a>
+     </div>
+  </div>
+ </div>
+</section>
+</div>
