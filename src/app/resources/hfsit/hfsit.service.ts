@@ -16,7 +16,7 @@ export class HfsitService{
   hfro : Hform[];
   Hforchanged  = new Subject<Hform[]>();
   getHfrm(){
-    this.http.get('http://ec2-35-154-112-61.ap-south-1.compute.amazonaws.com:8080/helpfor').subscribe(
+    this.http.get('http://ec2-13-233-7-96.ap-south-1.compute.amazonaws.com:8080/helpfor').subscribe(
       (hfm : Hform[])=>{
          this.hfro = hfm;
          this.Hforchanged.next(this.hfro);

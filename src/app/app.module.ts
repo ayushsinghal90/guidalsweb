@@ -15,7 +15,6 @@ import { ResnmService } from './shared/resnm.service';
 import { AppRoutingModule } from './app-routing.module';
 import { NoPageComponent } from './no-page/no-page.component';
 
-import { SafePipe} from './shared/safe.pipe';
 
 import { BespraccodComponent } from './resources/bespraccod/bespraccod.component';
 import { PaitusitComponent } from './resources/paitusit/paitusit.component';
@@ -42,7 +41,6 @@ import { HfsitService } from './resources/hfsit/hfsit.service';
     SugtonsComponent,
     AboutComponent,
     NoPageComponent,
-    SafePipe,
 
     ResourcesComponent,
     BespraccodComponent,

@@ -9,7 +9,7 @@ export class ResDetailResolve implements Resolve<Content>{
     resolve(route: ActivatedRouteSnapshot): Promise<Content> |Content{
       let id = +route.params['id'];
       if(!isNaN(id)){
-        return this.http.get<Content>('http://ec2-35-154-112-61.ap-south-1.compute.amazonaws.com:8080/langone/'+id).toPromise().then(cont=>{
+        return this.http.get<Content>('http://ec2-13-233-7-96.ap-south-1.compute.amazonaws.com:8080/langone/'+id).toPromise().then(cont=>{
           if(cont){
             return cont;
           }

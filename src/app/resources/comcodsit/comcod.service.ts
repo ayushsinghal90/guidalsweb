@@ -16,7 +16,7 @@ export class ComcodService {
   comst : Comsit[];
   comstchanged  = new Subject<Comsit[]>();
   getCom(){
-    this.http.get('http://ec2-35-154-112-61.ap-south-1.compute.amazonaws.com:8080/compitsite').subscribe(
+    this.http.get('http://ec2-13-233-7-96.ap-south-1.compute.amazonaws.com:8080/compitsite').subscribe(
       (comsit : Comsit[])=>{
          this.comst = comsit;
          this.comstchanged.next(this.comst);

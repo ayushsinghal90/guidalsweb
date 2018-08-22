@@ -42,7 +42,7 @@ export class SugtonsComponent implements OnInit {
   }
   onSubmit(){
     if(this.rForm.valid){
-     this.http.post<FormGroup>("http://ec2-35-154-112-61.ap-south-1.compute.amazonaws.com:8080/sugest",this.rForm.value).toPromise();
+     this.http.post<FormGroup>("http://ec2-13-233-7-96.ap-south-1.compute.amazonaws.com:8080/sugest",this.rForm.value).toPromise();
      this.rForm.reset();
      this.rForm.controls['newsteler'].setValue(true);
      this.onsubcom=true;
