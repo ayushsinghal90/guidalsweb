@@ -1,5 +1,5 @@
 <div class="row cont">
-<section class="col frtut span-6-of-6">
+<section class="col frtut span-5-of-6">
   <h2>Competitive Coding Sites</h2>
    <p class="tit-desc">Here are some sites where you can polish your coding skills through competitive programming.
       These sites contain problem in different domains you can choose your domain to start with.
@@ -7,9 +7,12 @@
         Some of these sites have a youtube channel with some tutorials you can also watch them for reference purposes.
       You should regularly practice on these sites.
 </p>
-
+<div class="mar">
+  <google-adsense [data]="9549554097"></google-adsense>
+</div>
 <h4>List of Sites</h4>
-<div class="row box" *ngFor="let csit of comst">
+<div *ngFor="let csit of comst; let i=index">
+<div class="row box">
   <div class="col span-1-of-6"><img src="{{csit.logurl}}" class="logo-web"></div>
   <div class="col span-5-of-6 main-bd"><h5>{{csit.name}}</h5>
     <div >
@@ -24,6 +27,15 @@
      <a href="{{csit.lnkto}}" class="free-lnk lnk-nav"  target="_blank">Start Learning</a>
      </div>
   </div>
+</div>
+<div class="mar"  *ngIf="i ===4">
+  <google-adsense [data]="2106958591"></google-adsense>
+</div>
  </div>
+</section>
+<section class="col span-1-of-6 dis">
+  <div>
+  <google-adsense [data]="4673998918"></google-adsense>
+</div>
 </section>
 </div>

@@ -5,7 +5,7 @@ import { Meta, Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-hfsit',
   templateUrl: './hfsit.component.html',
-  styleUrls: ['../sharedcss/common.css','../sharedcss/contst.css']
+  styleUrls: ['../sharedcss/common.css','../sharedcss/contst.css','../../ads/adsty.css']
 })
 export class HfsitComponent implements OnInit {
    hform : Hform[];

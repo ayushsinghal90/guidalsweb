@@ -6,7 +6,7 @@ import { Meta, Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-paitusit',
   templateUrl: './paitusit.component.html',
-  styleUrls: ['../sharedcss/common.css','../sharedcss/contst.css']
+  styleUrls: ['../sharedcss/common.css','../sharedcss/contst.css','../../ads/adsty.css']
 })
 export class PaitusitComponent implements OnInit {
   paisit : Paisit[];

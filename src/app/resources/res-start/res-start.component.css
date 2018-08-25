@@ -126,11 +126,7 @@
     margin: 0 10%;
   }
 }
-@media only screen and (max-width:995px){
-  .dis{
-    display: none;
-  }
-}
+
  @media only screen and (max-width:850px){
   .card{
     font-size: 125%;
@@ -153,9 +149,6 @@
   }
 }
 @media only screen and (max-width:550px){
-  .dish{
-    display:none;
-  }
   .hgj{
     padding-top: 15px;
   }

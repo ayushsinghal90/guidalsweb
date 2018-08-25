@@ -5,7 +5,7 @@ import { Meta, Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-comcodsit',
   templateUrl: './comcodsit.component.html',
-  styleUrls: ['../sharedcss/common.css','../sharedcss/contst.css']
+  styleUrls: ['../sharedcss/common.css','../sharedcss/contst.css','../../ads/adsty.css']
 })
 export class ComcodsitComponent implements OnInit {
   comst : Comsit[];

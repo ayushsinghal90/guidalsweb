@@ -4,7 +4,7 @@ import { Meta, Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-bespraccod',
   templateUrl: './bespraccod.component.html',
-  styleUrls: ['../sharedcss/hbcom.css','../sharedcss/contst.css','../sharedcss/common.css']
+  styleUrls: ['../sharedcss/hbcom.css','../sharedcss/contst.css','../sharedcss/common.css','../../ads/adsty.css']
 })
 export class BespraccodComponent implements OnInit {
 

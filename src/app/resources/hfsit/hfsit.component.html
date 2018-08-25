@@ -1,15 +1,18 @@
 <div class="row cont">
-<section class="col frtut span-6-of-6">
+<section class="col frtut span-5-of-6">
   <h2>Online Help Forums</h2>
    <p class="tit-desc">Hi there, this is the list of some online Forums which you
       can use for any problem you face while coding. Online Forums help Developer
        community to communicate with each other, coders post their problems here and
         developers around the world post solution to there problem. These will help you a lot so do create an account
       in some of them it will be beneficial to you while coding or creating projects.</p>
-
+      <div class="mar">
+        <google-adsense [data]="9549554097"></google-adsense>
+      </div>
 
 <h4>List of Sites</h4>
-<div class="row box" *ngFor="let hfsi of hform">
+<div *ngFor="let hfsi of hform; let i =index">
+<div class="row box" >
   <div class="col span-1-of-6"><img src="{{hfsi.logurl}}" class="logo-web"></div>
   <div class="col span-5-of-6 main-bd"><h5>{{hfsi.name}}</h5>
     <div >
@@ -24,6 +27,15 @@
      <a href="{{hfsi.lnkto}}" class="free-lnk lnk-nav"  target="_blank">Start Learning</a>
      </div>
   </div>
+</div>
+<div class="mar"  *ngIf="i ===4">
+  <google-adsense [data]="2106958591"></google-adsense>
+</div>
  </div>
+</section>
+<section class="col span-1-of-6 dis">
+  <div>
+  <google-adsense [data]="4673998918"></google-adsense>
+</div>
 </section>
 </div>

@@ -11,4 +11,7 @@
   .mar{
     padding: 10px 20px;
   }
+  .dis{
+    display: none;
+  }
 }

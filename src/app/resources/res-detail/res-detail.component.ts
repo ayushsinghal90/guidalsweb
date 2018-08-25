@@ -6,7 +6,7 @@ import { Meta, Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-res-detail',
   templateUrl: './res-detail.component.html',
-  styleUrls: ['./res-detail.component.css','../sharedcss/common.css','../sharedcss/contst.css']
+  styleUrls: ['./res-detail.component.css','../sharedcss/common.css','../sharedcss/contst.css','../../ads/adsty.css']
 })
 export class ResDetailComponent implements OnInit {
    cont : Content;
