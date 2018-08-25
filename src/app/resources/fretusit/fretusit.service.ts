@@ -16,7 +16,7 @@ export class FretusitService{
   frst : Freesite[];
   Frsitchanged  = new Subject<Freesite[]>();
   getFrs(){
-    this.http.get('http://ec2-13-233-7-96.ap-south-1.compute.amazonaws.com:8080/freesites').subscribe(
+    this.http.get('http://ec2-35-154-219-81.ap-south-1.compute.amazonaws.com:8080/freesites').subscribe(
       (frsit : Freesite[])=>{
          this.frst = frsit;
          this.Frsitchanged.next(this.frst);

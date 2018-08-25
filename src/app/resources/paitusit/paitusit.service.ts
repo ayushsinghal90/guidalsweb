@@ -16,7 +16,7 @@ export class PaitusitService{
   pasit : Paisit[];
   Psitchanged  = new Subject<Paisit[]>();
   getPfrm(){
-    this.http.get('http://ec2-13-233-7-96.ap-south-1.compute.amazonaws.com:8080/paidsites').subscribe(
+    this.http.get('http://ec2-35-154-219-81.ap-south-1.compute.amazonaws.com:8080/paidsites').subscribe(
       (past : Paisit[])=>{
          this.pasit = past;
          this.Psitchanged.next(this.pasit);

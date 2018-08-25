@@ -31,6 +31,8 @@ import { ResourcesComponent } from './resources/resources.component';
 import { HfsitComponent } from './resources/hfsit/hfsit.component';
 import { HfsitService } from './resources/hfsit/hfsit.service';
 
+import { AdBannerComponent } from './ads/adbanner.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +52,8 @@ import { HfsitService } from './resources/hfsit/hfsit.service';
     ResDetailComponent,
     HtcabComponent,
     ResStartComponent,
-    HfsitComponent
+    HfsitComponent,
+    AdBannerComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'my-guidals'}),

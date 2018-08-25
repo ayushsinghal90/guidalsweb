@@ -6,7 +6,7 @@ import { Meta, Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-res-start',
   templateUrl: './res-start.component.html',
-  styleUrls: ['./res-start.component.css','../sharedcss/contst.css']
+  styleUrls: ['./res-start.component.css','../sharedcss/contst.css','../../ads/adsty.css']
 })
 export class ResStartComponent implements OnInit {
    resn : Resnm[];

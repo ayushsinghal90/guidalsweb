@@ -1,0 +1,14 @@
+.mar{
+   display: block;
+   padding: 10px 25px;
+}
+@media only screen and (max-width:660px){
+  .mar div{
+    height: 100px;
+  }
+}
+@media only screen and (max-width:550px){
+  .mar{
+    padding: 10px 20px;
+  }
+}

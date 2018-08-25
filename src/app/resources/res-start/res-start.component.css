@@ -1,7 +1,5 @@
-section{
-  background-color: #fff;
-}
 .strt{
+  background-color: #fff;
     -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.4);
             box-shadow: 0 5px 10px rgba(0,0,0,0.4);
 }
@@ -74,6 +72,14 @@ section{
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
+.heading h3::after{
+  display: block;
+  height: 2px;
+  background-color: #e74c3c;
+  content: " ";
+  width: 17%;
+  margin: 5px auto ;
+}
 .heading{
   display: block;
   word-spacing: 4px;
@@ -120,6 +126,11 @@ section{
     margin: 0 10%;
   }
 }
+@media only screen and (max-width:995px){
+  .dis{
+    display: none;
+  }
+}
  @media only screen and (max-width:850px){
   .card{
     font-size: 125%;
@@ -142,6 +153,12 @@ section{
   }
 }
 @media only screen and (max-width:550px){
+  .dish{
+    display:none;
+  }
+  .hgj{
+    padding-top: 15px;
+  }
   .blg-lnk div{
     font-size: 90%;
   }
