@@ -9,7 +9,7 @@ export class ResnmService{
   resnmchanged  = new Subject<Resnm[]>();
   constructor(private http:HttpClient){}
   getNameId(){
-    this.http.get('http://ec2-35-154-219-81.ap-south-1.compute.amazonaws.com:8080/getnmid').subscribe(
+    this.http.get('http://ec2-52-66-253-220.ap-south-1.compute.amazonaws.com:8080/getnmid').subscribe(
       (resn : Resnm[])=>{
          this.resnm = resn;
          this.resnmchanged.next(this.resnm);
